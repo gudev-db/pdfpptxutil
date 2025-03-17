@@ -3,6 +3,9 @@ from pptx import Presentation
 import io
 from PyPDF2 import PdfReader
 
+st.set_page_config(layout="wide")
+
+
 def extract_text_from_pptx(file):
     prs = Presentation(file)
     slides_text = []
